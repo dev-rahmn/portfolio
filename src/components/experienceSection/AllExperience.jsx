@@ -3,7 +3,9 @@ import { FaArrowRight } from "react-icons/fa";
 import SingleExperience from "./SingleExperience";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
+import useResponsiveOffset from "../../framerMotion/useResponsiveOffset";
 const AllExperience = () => {
+  const offset = useResponsiveOffset();
   const experience = [
     {
       job: "Frontend Developer",
@@ -35,14 +37,9 @@ const AllExperience = () => {
           <>
             <SingleExperience key={index} experience={item} />
             {index < 1 && (
-              <motion.div
-                variants={fadeIn("right", "0.2")}
-                initial="hidden"
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0 }}
-              >
+              <div>
                 <FaArrowRight className="text-6xl text-orange lg:block sm:hidden" />
-              </motion.div>
+              </div>
             )}
           </>
         );

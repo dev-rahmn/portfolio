@@ -1,13 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
+import useResponsiveOffset from "../../framerMotion/useResponsiveOffset";
 const SingleExperience = ({ experience }) => {
+  const offset = useResponsiveOffset();
   return (
-    <motion.div
-      variants={fadeIn("right", "0.2")}
-      initial="hidden"
-      whileInView={"show"}
-      viewport={{ once: false, amount: 0 }}
+    <div
       className="lg:h-full lg:w-[240px] sm:h-auto sm:w-full md:h-auto md:w-full border-2 border-orange border-dashed rounded-2xl mt-12 p-4"
     >
       <p className="font-bold text-2xl text-cyan">{experience.job}</p>
@@ -18,7 +16,7 @@ const SingleExperience = ({ experience }) => {
           <li key={index}>{responsibility}</li>
         ))}
       </ul>
-    </motion.div>
+    </div>
   );
 };
 

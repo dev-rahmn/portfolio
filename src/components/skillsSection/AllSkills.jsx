@@ -12,7 +12,9 @@ import { SiMongodb } from "react-icons/si";
 import SingleSkill from "./SingleSkill";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
+import useResponsiveOffset from "../../framerMotion/useResponsiveOffset";
 const AllSkils = () => {
+  const offset = useResponsiveOffset();
   const skills = [
     { name: "HTML", icon: FaHtml5 },
     { name: "CSS", icon: FaCss3 },
@@ -30,18 +32,13 @@ const AllSkils = () => {
     <div className="flex items-center justify-center relative gap-2 max-w-[1200px] mx-auto">
       {skills.map((skill, index) => {
         return (
-          <motion.div
-            variants={fadeIn("right", `0.${index }`)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0 }}
-          >
+          <div>
             <SingleSkill
               key={index}
               text={skill.name}
               imgSvg={<skill.icon />}
             />
-          </motion.div>
+          </div>
         );
       })}
     </div>
