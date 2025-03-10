@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 
-import NavbarMain from './components/navbar/NavBarMain'
+import NavbarMain from './components/navbar/NavbarMain'
 import HeroMain from './components/heroSection/HeroMain'
 import HeroGradient from './components/heroSection/HeroGradient'
 import SubHeroSection from './components/heroSection/SubHeroSection'
