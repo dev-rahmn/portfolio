@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
-import { Typewriter } from "react-simple-typewriter";
+import { Typewriter } from 'react-simple-typewriter'
 
 const HeroText = () => {
   return (
@@ -13,7 +13,8 @@ const HeroText = () => {
         viewport={{ once: false, amount: 0 }}
         className="lg:text-2xl sm:text-xl uppercase text-cyan"
       >
-        Front-End Developer
+        {" "}
+        Front-End Web Developer{" "}
       </motion.h2>
       <motion.h1
         variants={fadeIn("right", 0.4)}
@@ -22,13 +23,7 @@ const HeroText = () => {
         viewport={{ once: false, amount: 0 }}
         className="md:text-[2.8rem] lg:text-6xl sm:text-4xl font-bold font-special text-orange"
       >
-        <Typewriter
-          words={["Atiqur Rahman", "Web Developer"]}
-          loop={true}
-          cursor
-          cursorStyle="_"
-          typeSpeed={70}
-        />
+        Atiqur Rahman
       </motion.h1>
       <motion.p
         variants={fadeIn("up", 0.6)}

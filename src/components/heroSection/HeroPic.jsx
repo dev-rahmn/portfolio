@@ -5,7 +5,7 @@ import { fadeIn } from '../../framerMotion/variants'
 const HeroPic = () => {
   return (
     <motion.div variants={fadeIn('left', 0.5)} initial='hidden' whileInView={'show'} viewport={{once: false, amount: 0}} className="h-full flex items-center justify-center">
-      <motion.img
+      <img
         src="../../images/polotno.png"
         alt="AtiqurRahman"
         className="max-h-[450px] w-auto"
