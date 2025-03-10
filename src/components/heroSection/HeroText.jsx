@@ -23,7 +23,15 @@ const HeroText = () => {
         viewport={{ once: false, amount: 0 }}
         className="md:text-[2.8rem] lg:text-6xl sm:text-4xl font-bold font-special text-orange"
       >
-        Atiqur Rahman
+        <Typewriter
+          words={["Atiqur Rahman", "Web Developer"]}
+          loop={false}
+          cursor
+          cursorStyle='_'
+          typeSpeed={70}
+          deleteSpeed={50}
+          delaySpeed={1000}
+        />
       </motion.h1>
       <motion.p
         variants={fadeIn("up", 0.6)}

@@ -16,7 +16,7 @@ import FooterMain from './components/footer/FooterMain'
 
 function App() {
 
-  return <main> 
+  return <main className='relative overflow-x-hidden'> 
     <NavbarMain />
     <HeroMain />
     <HeroGradient />
