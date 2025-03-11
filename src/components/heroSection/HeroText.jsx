@@ -14,7 +14,7 @@ const HeroText = () => {
         className="lg:text-2xl sm:text-xl uppercase text-cyan"
       >
         {" "}
-        Front-End Web Developer{" "}
+        Front-End Developer{" "}
       </motion.h2>
       <motion.h1
         variants={fadeIn("right", 0.4)}
@@ -28,9 +28,9 @@ const HeroText = () => {
           loop={false}
           cursor
           cursorStyle='_'
-          typeSpeed={70}
-          deleteSpeed={50}
-          delaySpeed={1000}
+          typeSpeed={100}
+          deleteSpeed={70}
+          delaySpeed={2000}
         />
       </motion.h1>
       <motion.p
