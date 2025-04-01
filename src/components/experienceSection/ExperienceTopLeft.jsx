@@ -11,7 +11,7 @@ const ExperienceTopLeft = () => {
         <ExperienceInfo number='8' text='Projects'/>
 
       </div >
-      <p className='text-center text-white text-xl font-bold uppercase'>2022 - 2023</p>
+      {/* <p className='text-center text-white text-xl font-bold uppercase'>2022 - 2023</p> */}
       {/* <div>
         <ExperienceInfo number='₹10,00,000' text='Max budget' />
       </div> */}
